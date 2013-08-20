@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sqlite',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,9 +66,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'database' => 'hello_laravel',
+			'username' => 'laraveladmin',
+			'password' => 'laraveladmin',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
