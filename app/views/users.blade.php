@@ -1,7 +1,18 @@
 @extends('layout')
 
 @section('content')
-  @foreach($users as $user)
-    <p>{{ $user->name }}</p>
-  @endforeach
+  <table>
+    <thead>
+      <th>Email</th>
+      <th>Name</th>
+    </thead>
+    <tbody>
+    @foreach($users as $user)
+      <tr>
+        <td>{{ $user->email }}</td>
+        <td>{{ $user->name }} </td>
+      </tr>
+    @endforeach
+    </tbody>
+  </table>
 @stop
